@@ -1,61 +1,33 @@
-Chatanooga - AI Chatbot
+# Voice Chatbot (Python)
 
-Chatanooga is an AI chatbot designed to interact with users using both speech recognition and text-to-speech capabilities. 
-It uses the DialoGPT language model for generating responses and is primarily built in Python 3.7.4. 
-This project provides a conversational interface that can be customized and extended based on specific requirements.
+A voice-enabled chatbot built in Python that combines speech recognition, text-to-speech, and a pretrained conversational language model to support spoken user interaction.
 
-Features
+## Overview
 
-    Speech Recognition: Utilizes Google Speech Recognition to convert user speech to text.
+This project explores a simple voice-based conversational interface using Python. It captures spoken input, converts it to text, generates a response using DialoGPT, and returns the response using text-to-speech.
 
-    Text-to-Speech: Uses pyttsx3 library to convert text responses back to speech.
+## Features
 
-    Conversational AI: Based on DialoGPT, enabling dynamic and context-aware responses.
+- Speech-to-text input using speech recognition
+- Text-to-speech output for spoken responses
+- Conversational response generation using DialoGPT
+- Simple Python-based architecture for experimentation and extension
 
-    Custom Training: Includes functionality to fine-tune the chatbot's language model with additional training data.
+## Tech Stack
 
-Requirements
+- Python
+- SpeechRecognition
+- pyttsx3
+- PyAudio
+- Hugging Face Transformers / DialoGPT
 
-    Python 3.7.4
+## Project Purpose
 
-    PyAudio: Ensure PyAudio-0.2.11-cp37-cp37m-win_amd64.whl is installed in the Python 3.7.4 environment.
+This project was created to explore conversational AI in a voice-based interface and to gain hands-on experience with speech processing, chatbot workflows, and Python application development.
 
-1. Installation
+## Setup
 
-    Clone the Repository:
-  
-	git clone https://github.com/yourusername/chatanooga.git cd 
-	
-2. Install Dependencies: Install the required Python packages:
-
-	pip install -r requirements.txt
-
-3. Install PyAudio: Ensure PyAudio is installed using the provided .whl file in your Python 3.7.4 folder:
-
-	pip install PyAudio-0.2.11-cp37-cp37m-win_amd64.whl
-
-
-Usage
-
-1. Run the Chatbot:
-
-	python speekbot.py
-
-2. Interact with Chatanooga:
-
-    Chatanooga listens for your voice commands and responds with synthesized speech.
-
-    Example interactions include asking about the weather, requesting a joke, or general knowledge questions.
-	 **** Bot does take a couple of minutes to load before each session****
-	 
-Customization
-
-    Training Data: Modify new_conversations in speekbot.py to add more examples for training.
-
-    Model Fine-Tuning: Adjust training parameters such as epochs and batch size in the train function.
-	
-Contributing
-
-Feel free to submit issues, fork the repository, and make pull requests to improve the chatbot. All contributions are welcome!
-	
-	
+1. Clone the repository:
+   ```bash
+   git clone https://github.com/mgc-00/voice-chatbot-python.git
+   cd voice-chatbot-python
