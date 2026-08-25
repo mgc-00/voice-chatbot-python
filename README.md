@@ -27,7 +27,22 @@ This project was created to explore conversational AI in a voice-based interface
 
 ## Setup
 
-1. Clone the repository:
+Clone the repository:
    ```bash
    git clone https://github.com/mgc-00/voice-chatbot-python.git
+
+pip install -r requirements.txt
    cd voice-chatbot-python
+
+python voice_chatbot.py
+
+Notes
+Depending on your environment, installing audio-related dependencies such as PyAudio may require additional platform-specific steps.
+Initial model loading may take some time before the chatbot is ready for interaction.
+
+Future Improvements
+Improve conversation flow and response quality
+Add better session memory and context handling
+Expand voice and UI options
+Improve setup compatibility across environments
+
