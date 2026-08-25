@@ -8,8 +8,8 @@ This project explores a simple voice-based conversational interface using Python
 
 ## Features
 
-- Speech-to-text input using speech recognition
-- Text-to-speech output for spoken responses
+- Speech-to-text input using SpeechRecognition
+- Text-to-speech output using pyttsx3
 - Conversational response generation using DialoGPT
 - Simple Python-based architecture for experimentation and extension
 
@@ -19,6 +19,8 @@ This project explores a simple voice-based conversational interface using Python
 - SpeechRecognition
 - pyttsx3
 - PyAudio
+- NumPy
+- PyTorch
 - Hugging Face Transformers / DialoGPT
 
 ## Project Purpose
@@ -27,17 +29,24 @@ This project was created to explore conversational AI in a voice-based interface
 
 ## Setup
 
-Clone the repository:
+1. Clone the repository:
    ```bash
    git clone https://github.com/mgc-00/voice-chatbot-python.git
+Move into the project directory:
 
+bash
+cd voice-chatbot-python
+Install dependencies:
+
+bash
 pip install -r requirements.txt
-   cd voice-chatbot-python
+Run the chatbot:
 
+bash
 python voice_chatbot.py
 
 Notes
-Depending on your environment, installing audio-related dependencies such as PyAudio may require additional platform-specific steps.
+Installing audio-related dependencies such as PyAudio may require additional platform-specific steps depending on your operating system and Python environment.
 Initial model loading may take some time before the chatbot is ready for interaction.
 
 Future Improvements
@@ -45,4 +54,3 @@ Improve conversation flow and response quality
 Add better session memory and context handling
 Expand voice and UI options
 Improve setup compatibility across environments
-
